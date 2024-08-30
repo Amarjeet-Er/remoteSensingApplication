@@ -290,7 +290,7 @@ header start
 
 
 .header-area {
-  background-color: rgba(250,250,250,0.15);
+  /* background-color: rgba(250, 250, 250, 0.15); */
   position: absolute;
   top: 40px;
   left: 0;
@@ -356,12 +356,12 @@ header start
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #f5a425 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #f5a425 !important;
   opacity: 1;
 }
 
@@ -407,7 +407,7 @@ header start
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #2a2a2a !important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -423,7 +423,7 @@ header start
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #f5a425!important;
+  color: #f5a425 !important;
   padding-left: 25px;
 }
 
@@ -453,6 +453,7 @@ header start
   text-indent: -9999em;
   z-index: 99;
   right: 40px;
+  color: white;
 }
 
 .background-header .main-nav .menu-trigger {
@@ -559,12 +560,10 @@ header start
 }
 
 
-
-
-
 .header-area .main-nav {
   overflow: hidden;
 }
+
 .header-area .main-nav .nav {
   float: none;
   width: 100%;
@@ -575,19 +574,27 @@ header start
   transition: all 0s ease 0s;
   margin-left: 0px;
 }
+
 .header-area .main-nav .nav li:first-child {
   border-top: 1px solid #eee;
 }
+
 .header-area.header-sticky .nav {
   margin-top: 100px !important;
+  background: red;
+  width: 100%;
+  position: absolute;
+  height: calc(100vh - 140px);
 }
+
 .header-area .main-nav .nav li {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding-left: 0px !important;
+  padding-left: 10px !important;
   padding-right: 0px !important;
 }
+
 .header-area .main-nav .nav li a {
   height: 50px !important;
   line-height: 50px !important;
@@ -596,10 +603,12 @@ header start
   background: #f7f7f7 !important;
   color: #191a20 !important;
 }
+
 .header-area .main-nav .nav li a:hover {
   background: #eee !important;
-  color: #f5a425!important;
+  color: #f5a425 !important;
 }
+
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
   position: relative;
   visibility: inherit;
@@ -612,23 +621,29 @@ header start
   height: 0px;
   transition: all 0s;
 }
+
 .header-area .main-nav .nav li.submenu ul li a {
   font-size: 12px;
   font-weight: 400;
 }
+
 .header-area .main-nav .nav li.submenu ul li a:hover:before {
   width: 0px;
 }
+
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
   height: auto;
 }
+
 .header-area .main-nav .nav li.has-sub:after {
   color: #3B566E;
   right: 30px;
   font-size: 14px;
   top: 15px;
 }
-.header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
+
+.header-area .main-nav .nav li.submenu:hover ul,
+.header-area .main-nav .nav li.submenu:focus ul {
   height: 0px;
 }
 
