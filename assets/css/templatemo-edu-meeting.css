@@ -186,6 +186,12 @@ img {
   overflow: hidden;
 }
 
+.scrollBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* 
 ---------------------------------------------
 global styles
@@ -279,7 +285,7 @@ header start
 */
 
 .background-header {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
   height: 80px !important;
   position: fixed !important;
   top: 0 !important;
@@ -288,11 +294,14 @@ header start
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
+.menu-active {
+  background-color: #ffffff;
+}
 
 .header-area {
   /* background-color: rgba(250, 250, 250, 0.15); */
   position: absolute;
-  top: 40px;
+  /* top: 40px; */
   left: 0;
   right: 0;
   z-index: 100;
@@ -406,7 +415,7 @@ header start
 .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
   opacity: 1;
   display: block;
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
   color: #2a2a2a !important;
   padding-left: 20px;
   height: 40px;
@@ -419,15 +428,19 @@ header start
   font-size: 13px;
   font-weight: 400;
   border-bottom: 1px solid #eee;
+  margin-left: 30px;
 }
 
-.header-area .main-nav .nav li.has-sub ul li a:hover {
+.header-area .main-nav .nav li.has-sub ul.sub-menu li a:hover {
+  color: #f5a425 !important;
+}
+
+.header-area .main-nav .nav li.has-sub ul li:hover {
   background: #fff;
   color: #f5a425 !important;
-  padding-left: 25px;
 }
 
-.header-area .main-nav .nav li.has-sub ul li a:hover:before {
+.header-area .main-nav .nav li.has-sub ul li:hover:before {
   width: 3px;
 }
 
@@ -468,7 +481,7 @@ header start
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -479,7 +492,7 @@ header start
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -488,7 +501,7 @@ header start
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -581,10 +594,10 @@ header start
 
 .header-area.header-sticky .nav {
   margin-top: 100px !important;
-  background: red;
+  background: rgb(255, 255, 255);
   width: 100%;
   position: absolute;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 100px);
 }
 
 .header-area .main-nav .nav li {
@@ -600,11 +613,12 @@ header start
   line-height: 50px !important;
   padding: 0px !important;
   border: none !important;
-  background: #f7f7f7 !important;
+  /* background: #f7f7f7 !important; */
   color: #191a20 !important;
+  margin-left: 20px;
 }
 
-.header-area .main-nav .nav li a:hover {
+.header-area .main-nav .nav li:hover {
   background: #eee !important;
   color: #f5a425 !important;
 }
@@ -627,7 +641,7 @@ header start
   font-weight: 400;
 }
 
-.header-area .main-nav .nav li.submenu ul li a:hover:before {
+.header-area .main-nav .nav li.submenu ul li:hover:before {
   width: 0px;
 }
 
@@ -755,7 +769,7 @@ services
 
 .services {
   margin-top: 15px;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
 }
 
@@ -863,19 +877,80 @@ services
 
 
 /*
+-----------------------------------------
+research design 
+-----------------------------------------
+*/
+
+.research {
+  width: 100%;
+  background-color: red;
+}
+
+.researchTop {
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.researchMain {
+  width: 100%;
+  padding: 10px;
+  height: calc(100% - 100px);
+  background-color: blue;
+}
+
+.researchBtn {
+  width: 33%;
+  display: flex;
+  background-color: red;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.researchBtn hr {
+  height: 2px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.contentBox {
+  width: 380px;
+  height: 530px;
+  background: red;
+}
+
+.imgBox {
+  width: 100%;
+  height: 400px;
+  background-color: darkblue;
+}
+
+.imgBox img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*
 ---------------------------------------------
 upcoming meetings
 ---------------------------------------------
 */
 
 section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
+  /* background-image: url(../images/meetings-bg.jpg); */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 360px;
-  padding-bottom: 110px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #3CF;
 }
 
 section.upcoming-meetings .section-heading {
@@ -1097,7 +1172,7 @@ courses
 */
 
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
+  /* background-image: url(../images/meetings-bg.jpg); */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1316,7 +1391,8 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/meetings-bg.jpg);
+  /* background-image: url(../images/meetings-bg.jpg); */
+  background-color: #34495e;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1422,23 +1498,24 @@ section.contact-us .right-info ul li span {
   font-weight: 700;
 }
 
-.footer {
-  text-align: center;
-  margin-top: 140px;
-  border-top: 1px solid rgba(250, 250, 250, 0.15);
-  padding: 50px 0px;
+
+.footer .footer-item {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer p {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #fff;
+.footer .footer-item a {
+  line-height: 19px;
+  color: white;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
 }
 
-.footer p a {
+.footer .footer-item a:hover {
   color: #f5a425;
 }
-
 
 /*
 ---------------------------------------------
