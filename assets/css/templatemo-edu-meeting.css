@@ -884,57 +884,114 @@ research design
 
 .research {
   width: 100%;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 .researchTop {
   width: 100%;
-  height: 100px;
-  padding: 10px 20px;
+  height: auto;
+  padding: 10px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .researchMain {
   width: 100%;
-  padding: 10px;
+  padding: 10px 10%;
   height: calc(100% - 100px);
-  background-color: blue;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.researchNavText {
+  flex: 1;
 }
 
 .researchBtn {
-  width: 33%;
   display: flex;
-  background-color: red;
   justify-content: space-between;
   align-items: center;
+  flex: 0.7;
 }
 
 .researchBtn hr {
   height: 2px;
   width: 100%;
-  background-color: yellow;
 }
 
 .contentBox {
-  width: 380px;
-  height: 530px;
-  background: red;
+  min-width: 300px;
+  height: 600px;
+  flex: 1;
+}
+
+.contentBox p {
+  padding: 10px;
+  height: calc(100% - 500px);
 }
 
 .imgBox {
   width: 100%;
-  height: 400px;
-  background-color: darkblue;
+  height: 500px;
+  position: relative;
 }
 
 .imgBox img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 3.7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  h5,
+  span {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .researchTop {
+    padding: 10px 3%;
+    flex-direction: column;
+  }
+
+  .researchBtn, .researchNavText {
+    width: 100%;
+  }
+
+  .researchMain {
+    padding: 10px 3%;
+  }
+
+  .contentBox {
+    min-width: 80vw;
+  }
+}
 
 /*
 ---------------------------------------------
@@ -950,7 +1007,7 @@ section.upcoming-meetings {
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #3CF;
+  background-color: rgb(255, 255, 255);
 }
 
 section.upcoming-meetings .section-heading {
@@ -958,7 +1015,7 @@ section.upcoming-meetings .section-heading {
 }
 
 section.upcoming-meetings .categories {
-  background-color: #fff;
+  background-color: #d3d3d3;
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
@@ -970,7 +1027,7 @@ section.upcoming-meetings .categories h4 {
   color: #1f272b;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 section.upcoming-meetings .categories ul li {
@@ -1029,7 +1086,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content {
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
