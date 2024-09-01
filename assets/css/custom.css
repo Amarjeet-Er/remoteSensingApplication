@@ -1,12 +1,37 @@
 .owl-happenings .item {
-    height: 400px; 
+    height: 400px;
     background: #4a4a4a;
     color: #fff;
     padding: 0px;
 }
-.owl-happenings .item  img{
-    height: 400px; 
+
+.owl-happenings .item img {
+    height: 400px;
     background: #4a4a4a;
     color: #fff;
     padding: 0px;
+}
+
+.happeningImg {
+    width: 40%;
+    height: 180px;
+}
+
+.happeningImg {
+    height: 100%;
+}
+
+.happeningText {
+    width: 60%;
+}
+
+.paddinghappeing {
+    padding: 0 5%;
+}
+.three-line-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
