@@ -12,12 +12,18 @@
     padding: 0px;
 }
 
+.happeningBox {
+    width: 100% !important;
+    height: 150px !important;
+    /* background-color: red; */
+    cursor: pointer;
+}
 .happeningImg {
     width: 40%;
-    height: 180px;
+    height: 150px !important;
 }
 
-.happeningImg {
+.happeningImg img {
     height: 100%;
 }
 
