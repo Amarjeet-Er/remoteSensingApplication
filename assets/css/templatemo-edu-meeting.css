@@ -275,7 +275,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
 }
 
 /* 
@@ -912,19 +912,21 @@ gov members design
   width: 100%;
   height: auto;
   margin: 40px 0;
-  padding: 25px;
+  padding: 25px 5%;
   display: flex;
   gap: 10px;
 }
 
 .memberBox {
-  height: 400px;
+  height: auto;
+  flex: 1;
   transition: flex-grow 0.3s ease;
   background-color: #ffffff;
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
 }
 
 .memberBox:first-child {
@@ -938,7 +940,7 @@ gov members design
 
 .memberTop {
   width: 100%;
-  height: 150px;
+  height: 100px;
   position: relative;
   border-radius: 5px 5px 0 0;
 }
@@ -968,10 +970,10 @@ gov members design
 
 .memberMain {
   width: 100%;
-  height: calc(100% - 150px);
+  height: calc(100% - 100px);
   border-radius: 0 0 5px 5px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 
@@ -1035,8 +1037,11 @@ research design
 }
 
 .contentBox p {
-  padding: 10px;
-  height: calc(100% - 500px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .imgBox {
@@ -1106,7 +1111,7 @@ Announcements design
 
 .announcements {
   width: 100%;
-  margin: 40px 0;
+  margin: 90px 0;
   background-color: rgb(255, 255, 255);
 }
 
@@ -1181,7 +1186,7 @@ Events design
 
 .events {
   width: 100%;
-  margin: 40px 0;
+  /* margin: 40px 0; */
   background-color: rgb(255, 255, 255);
 }
 
