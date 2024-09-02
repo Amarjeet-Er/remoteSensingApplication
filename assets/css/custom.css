@@ -18,6 +18,7 @@
     /* background-color: red; */
     cursor: pointer;
 }
+
 .happeningImg {
     width: 40%;
     height: 150px !important;
@@ -56,4 +57,14 @@
 
 .navbar-hidden {
     top: -150px;
+}
+
+/* Custom hover classes */
+.textColor {
+    color: black;
+}
+
+.textColor:hover {
+    color: #fff !important;
+    /* White color */
 }

@@ -963,7 +963,7 @@ gov members design
   border: 5px solid white;
 }
 
-.memberProfile img{
+.memberProfile img {
   width: 100%;
   height: 100%;
 }
@@ -978,8 +978,8 @@ gov members design
 
 
 @media screen and (max-width:768px) {
-  .govMembers{
-   flex-direction: column;
+  .govMembers {
+    flex-direction: column;
   }
 }
 
@@ -1391,7 +1391,17 @@ section.upcoming-meetings .categories .main-button-red a {
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  text-align: center;
 }
+
+.scaleBox {
+  transition: transform 0.3s ease;
+}
+
+.scaleBox:hover {
+  transform: scale(1.1);
+}
+
 
 .meeting-item .down-content .date {
   float: left;
@@ -1423,7 +1433,6 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content p {
-  margin-left: 50px;
   color: #1f272b;
   font-size: 14px;
 }
