@@ -28,10 +28,18 @@
 .paddinghappeing {
     padding: 0 5%;
 }
+
 .three-line-truncate {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-right: 10px;
 }
+
+.three-line-truncate:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
