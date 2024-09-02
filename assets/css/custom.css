@@ -43,3 +43,11 @@
     text-decoration: underline;
 }
 
+/* CSS to hide the navbar on scroll */
+.navbar {
+    transition: top 0.3s;
+}
+
+.navbar-hidden {
+    top: -150px;
+}
