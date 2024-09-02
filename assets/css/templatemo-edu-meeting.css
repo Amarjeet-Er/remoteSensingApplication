@@ -1308,8 +1308,8 @@ Events design
 .relatedLink {
   border: 1px solid #878787;
   border-radius: 5px;
-  width: 280px;
-  height: 130px;
+  /* width: 280px;
+  height: 130px; */
   padding: 5px;
 }
 
