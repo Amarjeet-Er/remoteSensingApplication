@@ -750,6 +750,7 @@ banner
   .main-banner .caption h2 {
     font-size: 36px;
   }
+
 }
 
 /*
@@ -985,7 +986,9 @@ gov members design
   .govMembers {
     flex-direction: column;
   }
-
+  .marginBox{
+    margin: 50px 0px;
+  }
 }
 
 

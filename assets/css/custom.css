@@ -59,12 +59,14 @@
     top: -150px;
 }
 
-/* Custom hover classes */
-.textColor {
-    color: black;
+.rotateBox {
+    transition: transform 1.5s ease;
 }
 
-.textColor:hover {
-    color: #fff !important;
-    /* White color */
+.rotateBox:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.text-shadow{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
