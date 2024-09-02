@@ -921,7 +921,7 @@ gov members design
 .memberBox {
   height: auto;
   flex: 1;
-  transition: flex-grow 0.3s ease;
+  transition: flex-grow 0.9s ease;
   background-color: #ffffff;
   padding: 10px;
   cursor: pointer;
