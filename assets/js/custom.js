@@ -1,19 +1,6 @@
 (function ($) {
 
 	"use strict";
-
-	// $(window).scroll(function () {
-	// 	var scroll = $(window).scrollTop();
-	// 	var box = $('.header-text').height();
-	// 	var header = $('header').height();
-
-	// 	if (scroll >= box - header) {
-	// 		$("header").addClass("background-header");
-	// 	} else {
-	// 		$("header").removeClass("background-header");
-	// 	}
-	// });
-
 	$('.filters ul li').click(function () {
 		$('.filters ul li').removeClass('active');
 		$(this).addClass('active');
@@ -128,34 +115,34 @@
 			}
 		}
 	})
-	 // apps carousel
-	 $(".owl-happenings").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        center: false,
-        dots: false,
-        loop: true,
-        margin: 25,
-        nav: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            992: {
-                items: 1
-            },
-            1200: {
-                items: 1
-            }
-        }
-    });
+	// apps carousel
+	$(".owl-happenings").owlCarousel({
+		autoplay: true,
+		smartSpeed: 1500,
+		center: false,
+		dots: false,
+		loop: true,
+		margin: 25,
+		nav: true,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
 
 	$('.owl-courses-item').owlCarousel({
 		items: 4,
@@ -247,22 +234,6 @@
 		});
 	});
 
-	// function onScroll(event) {
-	// 	var scrollPos = $(document).scrollTop();
-	// 	$('.nav a').each(function () {
-	// 		var currLink = $(this);
-	// 		var refElement = $(currLink.attr("href"));
-	// 		if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	// 			$('.nav ul li a').removeClass("active");
-	// 			currLink.addClass("active");
-	// 		}
-	// 		else {
-	// 			currLink.removeClass("active");
-	// 		}
-	// 	});
-	// }
-
-
 	// Page loading animation
 	$(window).on('load', function () {
 		if ($('.cover').length) {
@@ -280,7 +251,6 @@
 			}, 300);
 		});
 	});
-
 
 
 	const dropdownOpener = $('.main-nav ul.nav .has-sub > a');
@@ -336,7 +306,6 @@
 	}
 
 	$(window).scroll(function () {
-
 		if (visible($('.count-digit'))) {
 			if ($('.count-digit').hasClass('counter-loaded')) return;
 			$('.count-digit').addClass('counter-loaded');
@@ -358,5 +327,19 @@
 		}
 	})
 
+	// Js to hide the navbar on scroll 
+	let lastScrollTop = 0;
+	const navbar = document.querySelector('.navbar');
+	window.addEventListener('scroll', function () {
+		const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+		if (currentScroll > lastScrollTop) {
+			// Scrolling down
+			navbar.classList.add('navbar-hidden');
+		} else {
+			// Scrolling up
+			navbar.classList.remove('navbar-hidden');
+		}
+		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+	});
 
 })(window.jQuery);
