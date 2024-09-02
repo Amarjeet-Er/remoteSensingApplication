@@ -12,12 +12,19 @@
     padding: 0px;
 }
 
-.happeningImg {
-    width: 40%;
-    height: 180px;
+.happeningBox {
+    width: 100% !important;
+    height: 150px !important;
+    /* background-color: red; */
+    cursor: pointer;
 }
 
 .happeningImg {
+    width: 40%;
+    height: 150px !important;
+}
+
+.happeningImg img {
     height: 100%;
 }
 
@@ -50,4 +57,14 @@
 
 .navbar-hidden {
     top: -150px;
+}
+
+/* Custom hover classes */
+.textColor {
+    color: black;
+}
+
+.textColor:hover {
+    color: #fff !important;
+    /* White color */
 }
