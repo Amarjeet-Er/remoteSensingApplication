@@ -21,54 +21,75 @@
 </head>
 
 <body>
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <nav class="main-nav">
-      <!-- ***** Logo Start ***** -->
-      <a href="index.html" class="logo">
-        <img src="assets/images/sm-logo.png">
-      </a>
-      <!-- ***** Logo End ***** -->
-      <!-- ***** Menu Start ***** -->
-      <ul class="nav">
-        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-        <li class="has-sub">
-          <a href="javascript:void(0)">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Visitor's Book</a></li>
-            <li><a href="#">Organigational Chart</a></li>
-            <li><a href="#">Scientific Manpower</a></li>
-            <li class="has-sub">
-              <a href="javascript:void(0)">Our Formers</a>
-              <ul class="sub-menu">
-                <li><a href="#">Chairman Governing Body</a></li>
-                <li><a href="#">Director</a></li>
-                <li><a href="#">Scientist</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="scroll-to-section"><a href="#">Divisions</a></li>
-        <li class="scroll-to-section"><a href="#">Facilites</a></li>
-        <li class="scroll-to-section"><a href="#">Academics</a></li>
-        <li class="scroll-to-section"><a href="#">Geo-Portal</a></li>
-        <li class="scroll-to-section"><a href="#">Flood</a></li>
-        <li class="scroll-to-section"><a href="#">Photo Gallery</a></li>
-        <li class="scroll-to-section"><a href="#">RTI</a></li>
-        <li class="scroll-to-section"><a href="#">Tender</a></li>
-        <li class="scroll-to-section"><a href="#">FAQ</a></li>
-        <li class="scroll-to-section"><a href="#">Contact Us</a></li>
-      </ul>
-      <a class='menu-trigger'>
-        <span>Menu</span>
-      </a>
-      <!-- ***** Menu End ***** -->
-    </nav>
-  </header>
-  <!-- ***** Header Area End ***** -->
 
-  <!-- ***** Main Banner Area Start ***** -->
+
+  <!-- Menu Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/sm-logo.png" alt="Logo">
+      </a>
+      <button type="button" class="btn text-light me-4" data-bs-toggle="modal" data-bs-target="#fullScreenMenu">
+        <i class="fas fa-bars fs-3"></i>
+      </button>      
+    </div>
+  </nav>
+
+  <!-- Full-Screen Menu Modal -->
+  <div class="modal fade" id="fullScreenMenu" tabindex="-1" aria-labelledby="fullScreenMenuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fullScreenMenuLabel"> <img src="/assets/images/sm-logo.png" alt="Logo"></h5>
+          <button type="button" class="btn-close me-4" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#aboutUsSubmenu" aria-expanded="false"
+                      aria-controls="aboutUsSubmenu">About Us <i class="fas fa-chevron-down float-end"></i></a>
+                    <ul class="collapse list-group" id="aboutUsSubmenu">
+                      <li class="list-group-item"><a href="#">About Us</a></li>
+                      <li class="list-group-item"><a href="#">Visitor's Book</a></li>
+                      <li class="list-group-item"><a href="#">Organizational Chart</a></li>
+                      <li class="list-group-item"><a href="#">Scientific Manpower</a></li>
+                      <li class="list-group-item">
+                        <a href="#" data-bs-toggle="collapse" data-bs-target="#ourFormersSubmenu" aria-expanded="false"
+                          aria-controls="ourFormersSubmenu">Our Formers  <i class="fas fa-chevron-down float-end"></i></a>
+                        <ul class="collapse list-group" id="ourFormersSubmenu">
+                          <li class="list-group-item"><a href="#">Chairman Governing Body</a></li>
+                          <li class="list-group-item"><a href="#">Director</a></li>
+                          <li class="list-group-item"><a href="#">Scientist</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item"><a href="#">Divisions</a></li>
+                  <li class="list-group-item"><a href="#">Facilities</a></li>
+                  <li class="list-group-item"><a href="#">Academics</a></li>
+                  <li class="list-group-item"><a href="#">Geo-Portal</a></li>
+                  <li class="list-group-item"><a href="#">Flood</a></li>
+                  <li class="list-group-item"><a href="#">Photo Gallery</a></li>
+                  <li class="list-group-item"><a href="#">RTI</a></li>
+                  <li class="list-group-item"><a href="#">Tender</a></li>
+                  <li class="list-group-item"><a href="#">FAQ</a></li>
+                  <li class="list-group-item"><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Banner Area -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video">
       <source src="assets/images/course-video.mp4" type="video/mp4" />
@@ -80,8 +101,7 @@
           <div class="col-lg-12">
             <div class="caption">
               <h2>Remote Sensing Applications Center, Uttar Pradesh</h2>
-              <p>
-                An Autonomous Organigation under the Department of Science & Technology, Government of Uttar Pradesh
+              <p>An Autonomous Organization under the Department of Science & Technology, Government of Uttar Pradesh
               </p>
             </div>
           </div>
@@ -89,7 +109,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** Main Banner Area End ***** -->
+
 
   <section class="services">
     <div class="container">
@@ -153,7 +173,7 @@
     </div>
   </section>
 
-<!-- for reseach atical start -->
+  <!-- for reseach atical start -->
   <section class="research">
     <div class="researchTop">
       <span class="researchNavText">
@@ -181,7 +201,8 @@
         <div class="imgBox">
           <img src="/assets/images/shutterstock_2514983_1.jpg">
           <div class="overlay">
-            <h5 class="three-line-truncate">sit amet consectetur adipisicing elitest soluta Lorem ipsum dolor corporis aliquidlo.</h5>
+            <h5 class="three-line-truncate">sit amet consectetur adipisicing elitest soluta Lorem ipsum dolor corporis
+              aliquidlo.</h5>
             <span>Management Sicence</span>
           </div>
         </div>
@@ -201,7 +222,7 @@
       </div>
     </div>
   </section>
-<!-- for reseach atical end -->
+  <!-- for reseach atical end -->
 
 
   <!-- start Happenings -->
@@ -221,8 +242,9 @@
             </div>
           </div>
           <div class="down-content _text-center mt-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati a reprehenderit consectetur
-              ipsam tenetur eos inventore recusandae sequi libero?</p>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aliquam?
+            </h3>
           </div>
         </section>
       </div>
@@ -232,8 +254,10 @@
         </div>
         <div class="d-flex justify-content-between mb-4 border-bottom">
           <div class="text-start happeningText">
-            <div class="mb-4 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quos esse laborum
-              temporibus deserunt consequatur tempore fugiat illo eveniet omnis?</div>
+            <div class="mb-4 fw-bold three-line-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A quos esse laborum
+              temporibus deserunt consequatur tempore fugiat illo eveniet omnis?
+            </div>
             <p>10/12/2024</p>
           </div>
           <div class="text-end happeningImg">
@@ -242,7 +266,8 @@
         </div>
         <div class="d-flex justify-content-between mb-4 border-bottom">
           <div class="text-start happeningText">
-            <div class="mb-4 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quos esse laborum
+            <div class="mb-4 fw-bold three-line-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              quos esse laborum
               temporibus deserunt consequatur tempore fugiat illo eveniet omnis?</div>
             <p>10/12/2024</p>
           </div>
@@ -252,7 +277,8 @@
         </div>
         <div class="d-flex justify-content-between">
           <div class="text-start happeningText">
-            <div class="fw-bold mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla asperiores
+            <div class="fw-bold mb-4 three-line-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Tempora nulla asperiores
               numquam fugit atque saepe!</div>
             <p>10/12/2024</p>
           </div>
@@ -266,7 +292,7 @@
   <!-- end Happenings -->
 
 
-<!-- for announcemets atical start -->
+  <!-- for announcemets atical start -->
   <section class="announcements">
     <div class="announcementsTop">
       <span class="announcementsNavText">
@@ -282,26 +308,29 @@
 
       <div class="announcementsBox">
         <h6>01/07/2024</h6>
-       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Explicabo, totam.</p>
       </div>
 
       <div class="announcementsBox">
         <h6>01/07/2024</h6>
-       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Explicabo, totam.</p>
       </div>
 
       <div class="announcementsBox">
         <h6>01/07/2024</h6>
-       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Explicabo, totam.</p>
       </div>
-   
+
     </div>
   </section>
-<!-- for announcemets atical end -->
+  <!-- for announcemets atical end -->
 
 
 
-<!-- for events atical start -->
+  <!-- for events atical start -->
   <section class="events">
     <div class="eventsTop">
       <span class="eventsNavText">
@@ -324,24 +353,24 @@
           <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit totam.</h6>
           <p>01/07/2024 - 09/08/2024</p>
         </div>
-      
+
       </div>
-    
+
       <div class="eventsBox">
         <div class="eventDate">
           <span>Dec</span>
           <h4>07</h4>
-         </div>
-         <div class="eventText">
-           <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit totam.</h6>
-           <p>01/07/2024 - 09/08/2024</p>
+        </div>
+        <div class="eventText">
+          <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit totam.</h6>
+          <p>01/07/2024 - 09/08/2024</p>
         </div>
       </div>
 
     </div>
 
   </section>
-<!-- for events atical end -->
+  <!-- for events atical end -->
 
 
 
@@ -1055,6 +1084,7 @@
   <script src="assets/js/video.js"></script>
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
