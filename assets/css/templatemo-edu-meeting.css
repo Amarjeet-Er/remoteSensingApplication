@@ -214,6 +214,7 @@ body {
 }
 
 @media (max-width: 991px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -825,6 +826,7 @@ services
   border-radius: 50%;
   line-height: 50px;
 }
+
 .Happenings .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: "FontAwesome";
@@ -879,6 +881,7 @@ services
   border-radius: 50%;
   line-height: 50px;
 }
+
 .Happenings .owl-nav .owl-next:before {
   display: inline-block;
   font-family: "FontAwesome";
@@ -894,6 +897,90 @@ services
   right: 100px;
   line-height: 50px;
 }
+
+
+
+
+
+/*
+-----------------------------------------
+gov members design 
+-----------------------------------------
+*/
+
+.govMembers {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+  padding: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.memberBox {
+  height: 400px;
+  transition: flex-grow 0.3s ease;
+  background-color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.memberBox:first-child {
+  flex-grow: 2;
+}
+
+.memberBox:hover {
+  flex-grow: 3;
+}
+
+
+.memberTop {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+
+.memberTop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.memberProfile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.memberProfile img{
+  width: 100%;
+  height: 100%;
+}
+
+.memberMain {
+  width: 100%;
+  height: calc(100% - 150px);
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+
+@media screen and (max-width:768px) {
+  .govMembers{
+   flex-direction: column;
+  }
+}
+
 
 /*
 -----------------------------------------
@@ -1069,6 +1156,23 @@ Announcements design
   gap: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .announcementsTop {
+    padding: 10px 3%;
+    flex-direction: column;
+  }
+
+  .announcementsBtn,
+  .researchNavText {
+    width: 100%;
+  }
+
+  .announcementsMain {
+    padding: 10px 3%;
+  }
+
+}
+
 /*
 -----------------------------------------
 Events design 
@@ -1135,10 +1239,12 @@ Events design
   flex-direction: column;
   border-right: 1px solid black;
 }
+
 .eventDate span {
   color: red;
   font-size: 16px;
 }
+
 .eventDate h4 {
   font-size: 40px;
 }
@@ -1152,14 +1258,32 @@ Events design
 }
 
 @media screen and (max-width: 768px) {
+
+  .eventsTop {
+    padding: 10px 3%;
+    flex-direction: column;
+  }
+
+  .eventsBtn,
+  .eventsNavText {
+    width: 100%;
+  }
+
+  .eventsMain {
+    padding: 10px 3%;
+  }
+
+
   .eventsBox {
     flex-direction: column;
   }
+
   .eventDate {
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
   }
+
   .eventText {
     width: 100%;
   }
@@ -1387,7 +1511,7 @@ section.apply-now .item p {
   border-bottom: 1px solid #fff;
 }
 
-.accordion-body > .content {
+.accordion-body>.content {
   padding: 20px;
   padding-top: 0;
 }
