@@ -275,7 +275,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
 }
 
 /* 
@@ -1037,8 +1037,11 @@ research design
 }
 
 .contentBox p {
-  padding: 10px;
-  height: calc(100% - 500px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .imgBox {
@@ -1108,7 +1111,7 @@ Announcements design
 
 .announcements {
   width: 100%;
-  margin: 40px 0;
+  margin: 90px 0;
   background-color: rgb(255, 255, 255);
 }
 
@@ -1183,7 +1186,7 @@ Events design
 
 .events {
   width: 100%;
-  margin: 40px 0;
+  /* margin: 40px 0; */
   background-color: rgb(255, 255, 255);
 }
 
