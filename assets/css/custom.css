@@ -67,6 +67,7 @@
     transform: rotate(360deg);
     cursor: pointer;
 }
-.text-shadow{
+
+.text-shadow {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
